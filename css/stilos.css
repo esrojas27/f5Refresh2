@@ -150,11 +150,31 @@ body {
 .video-principal {
     width: 600px;
     height: 420px;
-    background: #636363;
+    background-color:#04006A;
     box-shadow: 5px 3px 20px #000000;
     border-radius: 5px;
-
 }
+
+.videoRedes {
+    width: 340px;
+    height: 245px;
+    background-color:#04006A;
+    border-radius: 5px;
+}
+
+.videoInformativo{
+    height:100%;
+    width:100%;
+    position:relative;
+}
+.videoInformativo video{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+}
+
 
 .carrusel-video {
     background-color: #272833;
@@ -205,12 +225,7 @@ body {
 
 }
 
-.videoRedes {
-    width: 340px;
-    height: 245px;
-    background: #636363;
-    border-radius: 5px;
-}
+
 
 .tituloServicio {
     width: 100%;
