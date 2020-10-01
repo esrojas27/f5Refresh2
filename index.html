@@ -27,100 +27,129 @@
         </div>
         <section class="video-info">
             <div class="info">
-                <h1>Por $ 20.000 COP</h1>
-                <p>Mantén tu empresa activa en la emergencia sanitaria.</p>
-                <h3>Nunca antes una oportunidad fue tan <strong>fácil y clara.</strong> </h3>
+                <h2>Por $ 20.000 COP</h2>
+                <h3>Mantén tu empresa activa en la emergencia sanitaria.</h3>
+                <p>Nunca antes una oportunidad fue tan <strong>fácil y clara.</strong> </p>
                 <h4>755 calificaciones</h4>
-                <img src="img/estrellas.png" alt="">
-                <h5>Ultima actualización 09/15/2020</h5>
-                <div class="btn-a">
-                    <a href="#">¡Empieza ya!</a>
+                <div class="ubiBoton1">
+                    <img src="img/estrellas.png" width="80" height="15" alt="">
+                </div>
+                
+                
+                <h5>Ultima actualizacion :
+                    <script languaje="JavaScript">
+
+                        var mydate=new Date()
+                        var year=mydate.getYear()
+                        if (year < 1000)
+                        year+=1900
+                        var day=mydate.getDay()
+                        var month=mydate.getMonth()+1
+                        var daym=mydate.getDate()
+                        if (daym<10)
+                        daym="0"+daym
+                        var dayarray=new Array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado")
+                        var montharray=new
+                        
+                        Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
+                        document.write("<mall><font color='#04006A' face='Impact'> "+daym+" / "+month+" / "+year+"</font></mall>")
+                        
+                        </script> </h5>
+                <div class="ubiBoton1" >
+                    <button class="botonInicio" href="#">¡Empieza ya!</button>
                 </div>
             </div>
 
             </div>
             <div class="video-principal">
-                <div class="video"></div>
+                <div class="videoRedes"></div>
             </div>
         </section>
     </header>
+
     <section class="carrusel-video">
         <div class="contenedor-carrusel">
-            <div class="titulo">
+            <div class="tituloVideos">
                 <h2>¿Cómo hacer tu negocio online?</h2>
             </div>
             <div class="carrusel">
-                <h3>facebook</h3>
-                <div class="video"></div>
+                <h3>Facebook</h3>
+                <div class="videoRedes"></div>
             </div>
             <div class="carrusel">
-                <h3>instagram</h3>
-                <div class="video"></div>
+                <h3>Instagram</h3>
+                <div class="videoRedes"></div>
             </div>
             <div class="carrusel">
-                <h3>google ads</h3>
-                <div class="video"></div>
+                <h3>Google ADS</h3>
+                <div class="videoRedes"></div>
             </div>
-            <div class="titulo-dos">
-                <h3>Nosotros lo hacemos por ti</h3>
-
-            </div>
+            
         </div>
     </section>
     
 
     <!--Comienza seccionde servicios-->
         <div class="servicioSec">
-            
-            <div class="container cajaProducto">
-                <div class="row 150% justify-content-between ">
-                    <div class="col-md-5 producto">
-                        <div class="textoProducto text-center">
-                            <h2>HAZTE SOCIO</h2>
-                            <h3>Únete a nuestra comunidad</h3>
-                            <p>Por sólo</p>
-                            <h4>$20.000 COP +</h4>
-                            <button class="btnProducto">¡Empieza ya!</button>
-                        </div>
-                        
-                    </div>
-                    <div class="col-md-5 producto">
-                        <div class="textoProducto text-center">
-                            <div class="tituloProducto2">
-                                <h2>Socio premium</h2>
+            <div class="seccionServicio">
+                <div class="tituloServicio">
+                    <h3>Nosotros lo hacemos por ti</h3>
+    
+                </div>
+                <div class="container cajaProducto">
+                    <div class="row 150% justify-content-between ">
+                        <div class="col-md-5 producto ">
+                            <div class="textoProducto text-center">
+                                <h2>HAZTE SOCIO</h2>
+                                <h3>Únete a nuestra comunidad</h3>
+                                <p>Por sólo</p>
+                                <h4>$20.000 COP +</h4>
+                                <button class="btnProducto">¡Empieza ya!</button>
                             </div>
-                            <h3>Únete a nuestra comunidad</h3>
-                            <p>Por sólo</p>
-                            <h4>$220.000 COP</h4>
-                            <button class="btnProducto" >¡Empieza ya!</button>
+                            
                         </div>
-                        
+                        <div class="col-md-5 producto premium">
+                            <div class="textoProducto text-center">
+                                <div class="tituloProducto2 colorPremium">
+                                    <h2>Socio premium</h2>
+                                </div>
+                                <h3>Únete a nuestra comunidad</h3>
+                                <p>Por sólo</p>
+                                <h4>$220.000 COP</h4>
+                                <button class="btnProducto" >¡Empieza ya!</button>
+                            </div>
+                            
+                        </div>
+    
+    
                     </div>
-
-
+    
                 </div>
-
             </div>
+            
+            
             <!--Seccion de Formulario-->
-        <form class="formContact" onsubmit="validarFormulario(event)">
-            <div class="titulo-dos">
-                <h3>Contactanos</h3>
+            <div class="seccionFormulario">
+                <form class="formContact" onsubmit="validarFormulario(event)">
+                    <div class="tituloFormulario">
+                        <h3>Contactanos</h3>
+                    </div>
+                      <div class="contInput"> 
+                          <input type="text" placeholder="Nombre" id="name">
+                          <small id="mensajeAlertNombre" class="mensajeAlert"></small>
+                      </div>
+                
+                        <div class="contInput">
+                            <input type="email" placeholder="Correo" id="email">
+                            <small id="mensajeAlertEmail" class="mensajeAlert"></small>
+                        </div>
+                
+                        <input type="submit" value="Enviar" class="btnEnviar ">
+                
+                  </form>
+
             </div>
-              <div class="contInput">
-                  <label for="">Nombre</label>
-                  <input type="text" placeholder="Ej: Edgar Ruiz" id="name">
-                  <small id="mensajeAlertNombre" class="mensajeAlert"></small>
-              </div>
         
-                <div class="contInput">
-                    <label for="">Correo</label>
-                    <input type="email" placeholder="Ej: Edgar Ruiz" id="email">
-                    <small id="mensajeAlertEmail" class="mensajeAlert"></small>
-                </div>
-        
-                <input type="submit" value="Enviar" class="btnEnviar ">
-        
-          </form>
         </div>
 
 
